@@ -18,3 +18,4 @@ Located in the `backend` directory.
    ```bash
    cd frontend
    npm install
+# medicine
