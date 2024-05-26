@@ -187,5 +187,9 @@ module.exports = {
     createUser,
     loginUser,
     updateUser,
-    deleteUser
+    deleteUser,
+    getAllUser,
+    getDetailsUser,
+    refreshToken,
+    logoutUser,
 }
