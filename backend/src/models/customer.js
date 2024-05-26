@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const userSchema = new mongoose.Schema(
+const customerSchema = new mongoose.Schema(
     {
         avatar: { type: String },
         name: { type: String },
@@ -16,5 +16,5 @@ const userSchema = new mongoose.Schema(
     }
 
 );
-const User = mongoose.model("User", userSchema);
-module.exports = User;
+const Customer = mongoose.model("Customer", customerSchema);
+module.exports = Customer;

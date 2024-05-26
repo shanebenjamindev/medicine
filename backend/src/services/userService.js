@@ -1,6 +1,7 @@
 const User = require("../models/userModel")
 const bcrypt = require("bcryptjs")
-const { genneralAccessToken, genneralRefreshToken } = require("./JwtService")
+const { genneralAccessToken, genneralRefreshToken } = require("./jwtService")
+const { signInUser } = require("../controllers/userController")
 
 const createUser = (newUser) => {
     return new Promise(async (resolve, reject) => {
@@ -183,4 +184,7 @@ const getDetailsUser = (id) => {
 
 module.exports = {
     createUser,
+    loginUser,
+    updateUser,
+    deleteUser
 }
